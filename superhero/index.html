@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super - Heroes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon"
+        href="https://static.vecteezy.com/system/resources/previews/024/806/418/original/batman-logo-batman-icon-logo-transparent-free-png.png"
+        type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" name="Hero" id="heroName" placeholder="Enter a hero name" class="hero-input" required>
+        <button id="search" class="hero-button" onclick="superHero()">Search</button>
+        <div class="hero-info">
+            <p id="apperance"></p>
+            <br>
+            <p id="publisher"></p>
+            <br>
+            <p id="fullName"></p>
+            <br>
+            <p id="relatives"></p>
+        </div>
+
+        <div id="error-message">
+            <p>Please enter a valid superhero name or check your spelling</p>
+        </div>
+
+        <div id="loader" class="hidden">
+            <div class="spinner"></div>
+        </div>
+
+        <img src="" alt="" id="hero-image" class="hero-image" style="display: none;">
+    </div>
+
+    <div class="copyright"><h2>&copy;InshRonin</h2></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

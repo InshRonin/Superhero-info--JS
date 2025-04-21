@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body{
+    background-image: url(https://wallpapercave.com/wp/wp4411792.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container{
+    max-width: 400px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255,255,255, 0.6);
+    border-radius: 10px;
+    box-shadow: 3px 5px 10px rgba(0,0,0,0.7);
+    overflow: hidden;
+}
+
+.container input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    color: rgba(0, 0, 255,0.5);
+    box-shadow: 0 2px 8px rgba(0, 0, 255, 0.39);
+}
+.container input:focus{
+    color: rgba(0, 0, 255,0.8);
+    border-bottom: 2px solid rgba(0, 0, 255,0.5);
+}
+.container button{
+    width: 70px;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 255,0.5);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.container button:hover{
+    background-color: rgba(0, 0, 255,0.8);
+}
+
+.hero-info{
+    text-align: center;
+    color:rgba(0, 0, 100, 0.8);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: none;
+    transition: all 0.3s ease-in-out;
+    display: none;
+}
+
+.hero-info span{
+    font-weight: 600;
+    color: rgba(0, 0, 255,0.8);
+}
+
+.container img{
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 3px 5px 8px rgba(0, 0, 255, 0.5);
+    transition: all 0.3s ease-in;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+  
+#loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+  
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+  
+@keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+#error-message{
+    text-align: center;
+    color:rgba(0, 0, 100, 0.8);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: none;
+    transition: all 0.3s ease-in-out;
+    display: none;
+}
+
+.copyright{
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
